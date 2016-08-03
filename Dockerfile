@@ -5,6 +5,7 @@ MAINTAINER Dan Williamson "willdr3@student.op.ac.nz"
 RUN apt-get -q update && apt-get -yq dist-upgrade
 RUN apt-get -yq install apache2
 
+ENV VERSION willdr3-04-08-2016:08.45am
 ENV APACHE_RUN_USER www-data
 ENV APACHE_RUN_GROUP www-data
 ENV APACHE_LOG_DIR /var/log/apache2
